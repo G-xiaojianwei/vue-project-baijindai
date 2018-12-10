@@ -1,0 +1,258 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+html{
+	font-size: 31.25vw;
+}
+body{
+	background: #f1f1f1;
+}
+$a:10/3;
+#de_header{
+	position: fixed;
+	left: 0;
+	top: 0;
+	z-index: 10;
+	width: 100%;
+	height: 0.39rem;
+	color: #fff;
+	line-height: 0.39rem;
+	display: flex;
+	background: #2C2D2D;
+	font-size: 0.16rem;
+	.iconfont{
+		flex: 0;
+		box-sizing: border-box;
+		padding-left: 0.08rem;
+		font-size: 0.14rem;
+		vertical-align: middle;
+	}
+	span{
+		text-align: center;
+		flex: 10;
+		display: inline-block;
+		vertical-align: middle;
+	}
+}
+
+#de_banner{
+	overflow: hidden;
+	position: relative;
+	margin-top: 0.39rem;
+	width: 100%;
+	height: 2rem;
+	background: url("../bg.png");
+	background-size:100% 100%;
+	.de_title{
+		width: 100%;
+		height: 0.56rem;
+		text-align: center;
+		color: #fff;
+		box-sizing: border-box;
+		padding-top:0.39rem; 
+		font-size: 0.14rem;
+	} 
+	.de_par{
+		margin-top: 0.1rem;
+		text-align: center;
+		font-size: 0.26rem;
+		color: #fff;
+	}
+	.de_xy{
+		text-align: center;
+		margin-top: 0.03rem;
+		font-size: 0.12rem;
+		color: #fff;
+	}
+	.de_dibt{
+		width: 100%;
+		margin-top:0.23rem; 
+		height: 0.56rem;
+		display: flex;
+		font-size: 0.2rem;
+		align-items: center;
+		color: #fff;
+		div{
+			font-size: 0.10rem;
+			flex:$a;
+			text-align: center;
+			line-height: 0.25rem;
+			p:last-child{
+				color: #f1f1f1;
+			}
+		}
+		span{
+			display: inline-block;
+			border-left:1px solid #ccc;
+			height: 50%;
+		}
+	}
+	.de_posi{
+		position: absolute;
+		right: -0.15rem;
+		top: 0.15rem;
+		font-size: 0.12rem;
+		width: 1.55rem;
+		height: 0.17rem;
+		border-radius: 1rem;
+		padding: 0 0.1rem;
+		color: #fff;
+		background: rgba(255,0,0,.2);
+	}
+	.bianqian{
+		position: absolute;
+		left: 0;
+		top: 0;
+		height: 0.51rem;
+		width: 0.48rem;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin-left:0.1rem; 
+		i{
+			font-size: 0.6rem;
+			color: #F8C97B;
+		}
+		.bq_top{
+			position: absolute;
+			left:0;
+			top: 0;
+			width: 100%;
+			text-align: center;
+			color: #F9594B;
+			height:0.26rem;
+			font-size: 0.14rem;
+			span{
+				font-size: 0.18rem;
+				font-weight: 560;
+			}
+		}
+		.bq_btm{
+			width: 100%;
+			height: 0.32rem;
+			position: absolute;
+			left:0;
+			top: 0.26rem;
+			font-size: 0.12rem;
+			color: #F8594B;
+			text-align: center;
+		}
+	}
+}
+
+#de_detail_li{
+	background: #fff;
+	width: 100%;
+	margin-bottom: 0.06rem;
+	li{
+		height: 0.30rem;
+		box-sizing: border-box;
+		padding: 0.07rem 0.1rem;
+		display: flex;
+		font-size:0.12rem;
+		justify-content: space-between;
+		align-items: center;
+	}
+}
+
+#de_flow2{
+	padding-top:0.06rem;
+	margin-bottom:0.06rem;  
+	background: #fff;
+	width: 100%;
+	.flow_a{
+		box-sizing: border-box;
+		padding: 0 0.05rem;
+		height: 0.86rem;
+		display: flex;
+		.flow_big{
+			text-align:center;
+			flex: 2.2;
+			font-size: 0.12rem;
+			.flow_big_a{
+				height: 0.35rem;
+				width: 0.35rem;
+				margin: 0.1rem auto 0;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				border-radius: 50%;
+				overflow: hidden;
+				i{
+					font-size: 0.35rem;
+					color: #FE5947;
+				}
+			}
+			.flow_big_b{
+				margin-top: 0.04rem;
+				color:#333;
+			}
+			.flow_big_c{
+				margin-top: 0.02rem;
+				color:#999;
+			}
+		}
+	}
+	.flow_b{
+	padding-top:0.04rem;
+	height:  0.2rem;
+	text-align: center;
+	font-size: 0.12rem;
+	color: #999;
+	}
+}
+
+
+#cn_problem{
+	height: 0.39rem;
+	width: 100%;
+	background: #fff;
+	line-height: 0.39rem;
+	font-size: 0.14rem;
+	padding:0 0.1rem;
+	color: #333;
+	box-sizing: border-box;
+	i{
+		float: right;
+		color: #999;
+	}
+}
+
+#tips{
+	height: 0.45rem;
+	width: 100%;
+	line-height: 0.45rem;
+	font-size:0.12rem;
+	color: #999;
+	text-align: center;
+	margin-bottom:0.41rem; 
+}
+#btn{
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	display: flex;
+	height: 0.41rem;
+	width: 100%;
+	.btn_left{
+		display: flex;
+		flex: 1.5;
+		justify-content: center;
+		align-items: center;
+		background: #fff;
+		color: #FFACA6;
+		i{
+			font-size: 0.3rem;
+		}
+
+	}
+	.btn_right{
+		flex: 8.5;
+		background: #FE3737;
+		text-align:center;
+		line-height: 0.41rem;
+		font-size: 0.14rem;
+		color: #fff;
+	}
+}

@@ -1,0 +1,70 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Swiper demo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="css/swiper-4.1.0.min.css">
+
+  <!-- Demo styles -->
+  <style>
+  html{
+   font-size: 31.25vw;
+  }
+.swiper-container {
+    /*margin-top: 0.2rem;*/
+    width: 3rem;
+/*    height: 0.8rem;*/
+    /*margin-bottom: 0.53rem;*/
+    overflow: visible !important;
+}
+.swiper-container .swiper-wrapper .swiper-slide{ width: 2.8rem; border-radius: 0.2rem; }
+.swiper-container .swiper-wrapper .swiper-slide img{width: 100%;/* height: 0.8rem;*/ vertical-align: top;vertical-align: middle;}
+.swiper-container .swiper-wrapper .swiper-slide-prev{ height: 0.6rem!important;}
+.swiper-container .swiper-wrapper .swiper-slide-prev img{ height: 0.6rem !important; vertical-align: middle;}
+.swiper-container .swiper-wrapper .swiper-slide-next{  height: 0.6rem!important;}
+.swiper-container .swiper-wrapper .swiper-slide-next img{ height: 0.6rem !important; vertical-align: middle;}
+.swiper-container .swiper-wrapper .swiper-slide-active{ width: 2.8rem;}
+
+.swiper-pagination{
+    bottom: -0.3rem !important;
+}
+.swiper-pagination .swiper-pagination-bullet{width: 0.12rem; height: 0.12rem; background: #ff1e1e;}
+.swiper-pagination .swiper-pagination-bullet-active{width: 0.21rem; height: 0.12rem; background: #e75230; }
+  </style>
+</head>
+<body>
+  <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="https://www.baijindai.com/upload/2018/11/02/201811020227073514.png" /></div>
+                <div class="swiper-slide"><img src="https://www.baijindai.com/upload/2018/11/02/201811020934046396.png" /></div>
+                <div class="swiper-slide"><img src="https://www.baijindai.com/upload/2018/11/02/201811020141244598.png" /></div>
+                <div class="swiper-slide"><img src="https://www.baijindai.com/upload/2018/11/02/201811020142192633.png" /></div>
+            </div>
+            <!-- Èç¹ûÐèÒª·ÖÒ³Æ÷ -->
+            <div class="swiper-pagination"></div>
+ </div>
+ <div class="nav">
+    <div></div>
+ </div>
+  <!-- Swiper JS -->
+  <script src="js/swiper-4.1.0.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var mySwiper = new Swiper ('.swiper-container', {
+                direction: 'horizontal',
+                loop: true,
+                autoplay: 5000,
+                slidesPerView: "auto",
+                centeredSlides:true,
+                spaceBetween: 10,
+                // Èç¹ûÐèÒª·ÖÒ³Æ÷
+                pagination: '.swiper-pagination',
+ })
+  </script>
+</body>
+</html>

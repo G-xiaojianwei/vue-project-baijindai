@@ -1,0 +1,160 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+html{
+	font-size: 31.25vw;
+}
+body{
+	background: #f1f1f1;
+}
+#find_nav_title{
+	width: 100%;
+	height: 0.42rem;
+	background: url('../findtitle.png');
+	background-size: 100% 100%; 
+	.title_neibu{
+		font-size: 0.14rem;
+		text-align:center;	
+		height: 0.42rem;
+		width: 90%;
+		margin: 0 auto;
+		line-height: 0.42rem;
+		border-bottom: 0.01rem solid #f1f1f1;
+		box-sizing: border-box;
+		font-weight: bold;
+		color: #333;
+
+	}
+	// margin-bottom: 0.01rem; 
+}
+#find_good{
+	width: 100%;
+	height: 1.37rem;
+	background: #fff;
+	img{
+		width: 100%;
+		height: 100%;
+		padding:0 0.1rem;
+		box-sizing: border-box;
+		vertical-align: top;
+	}
+}
+
+#find_clearfix{
+	width: 100%;
+	height: 1.79rem;
+	padding: 0.13rem 0;
+	background: #fff;
+	display: flex;
+	box-sizing: border-box;
+	justify-content: space-around;
+	.clearfix_a{
+		margin-left: 0.08rem; 
+		height: 100%;
+		width: 0.96rem; 
+		border:0.01rem solid #f1f1f1; 
+		font-size: 0.12rem;
+		.good_img{
+			width: 100%;
+			height: 0.96rem;
+			img{
+				width: 100%;
+				height: 100%;
+				vertical-align: top;
+			}
+		}
+		.find_p1{
+			box-sizing: border-box;
+			margin-top:0.05rem; 
+			padding-left:0.05rem; 
+		}
+		.find_p2{
+			box-sizing: border-box;
+			padding:0 0.05rem; 
+			margin-top:0.05rem; 
+			span{
+				color: #FD2665;
+			}
+		}
+	}
+	.clearfix_a:last-child{
+		margin-right: 0.08rem; 
+	}
+}
+
+#find_more{
+	width: 100%;
+	height: 0.33rem;
+	background: #fff;
+	font-size: 0.12rem;
+	text-align: center;
+	line-height: 0.33rem;
+	border-top: 0.01rem solid #f1f1f1;
+	color: #999;
+	i{
+		font-size: 0.12rem;
+		color: #999;
+	}
+	margin-bottom:0.08rem; 
+}
+
+#find_news_list{
+	width: 100%;
+	background: #fff;
+	ul{
+		width: 100%;
+		li{
+			width: 2.96rem;
+			margin: 0 auto;
+			padding: 0.15rem 0;
+			height: 1.24rem;
+			box-sizing: border-box;
+			display: flex;
+			justify-content: space-between;
+			.list_left{
+				width: 1.89rem;
+				.left_p1{
+					width: 100%;
+					height: 0.63rem;
+					font-size: 0.14rem;
+					i{
+						font-size: 0.2rem;
+						vertical-align: middle;
+						color: #EF5252;
+					}
+				}
+				.left_info{
+					width: 100%;
+					padding-top:0.15rem; 
+					height: 0.33rem;
+					box-sizing: border-box;
+					display: flex;
+					div{
+						color: #999;
+						text-align: center;
+						flex: 1;
+						font-size:0.1rem;
+						i{
+							font-size: 0.1rem;
+						}
+					}
+					div:last-child{
+						flex: 1.5;
+						text-align: right;
+					}
+				}
+			}
+			.list_right{
+				width: 0.91rem;
+				height: 0.65rem;
+				img{
+					width: 0.91rem;
+					height:0.65rem;
+					vertical-align: top;
+				}
+
+			}
+		}
+	}
+}

@@ -1,0 +1,141 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+html{
+	font-size: 31.25vw;
+}
+body{
+	background: #f1f1f1;
+}
+#user_header{
+	position: relative;
+	width: 100%;
+	height: 2.13rem;
+	background: url('../userheader.png');
+	background-size:100% 100%; 
+	.user_login{
+		width: 0.95rem;
+		height: 0.25rem;
+		background: #F94E48;
+		position: absolute;
+		left: 0;
+		right: 0;
+		top: 0.8rem;
+		bottom:0;
+		text-align: center;
+		line-height: 0.25rem;
+		font-size:0.12rem;
+		color: #fff;
+		margin:auto; 
+		border-radius: 0.1rem;
+	}
+	.header_a{
+		width: 100%;
+		margin-top: 0.11rem;
+		padding:0 0.08rem;
+		box-sizing: border-box; 
+		height: 0.35rem;
+		display: flex;
+		justify-content:space-between;
+		.header_img{
+			width: 0.34rem;
+			height: 0.34rem;
+			background: red;
+			border-radius: 50%;
+		}
+		.header_set{
+			width: 0.2rem;
+			height:0.2rem; 	
+			background: blue;	
+		}
+	}
+}
+#user_header:before{
+	content: "";
+	display:table;
+}
+
+.user_line{
+	width: 100%;
+	padding: 0 0.15rem;
+	height: 0.41rem;
+	display: flex;
+	box-sizing: border-box;
+	font-size: 0.12rem;
+	border-bottom: 0.01rem solid #eee;
+	background: #fff;
+	.line_left{
+		display: flex;
+		line-height: 0.41rem;
+		flex: 3;
+		justify-content: space-between;
+		div{
+			font-size:0.13rem;
+			i{
+			font-size: 0.22rem;
+			vertical-align: middle;
+			color: #166FEE;
+			}
+		}
+		div:last-child{
+			padding-right: 0.1rem;
+			color: #999;
+			
+		}
+	}
+	.line_right{
+		height: 0.41rem;
+		justify-content: space-around;
+		flex: 1;
+		border-left: 1px solid #eee;
+		line-height: 0.41rem;
+		display: flex;
+		div{
+			margin: 0 0.05rem;
+		}
+	}
+}
+
+#user_two{
+	width: 100%;
+	background: #fff;
+	.user_line2{
+	width: 2.89rem;
+	margin: 0 auto;
+	height: 0.41rem;
+	display: flex;
+	font-size: 0.12rem;
+	border-bottom: 0.01rem solid #eee;
+	.line_left{
+		display: flex;
+		line-height: 0.41rem;
+		flex: 9.5;
+		justify-content: space-between;
+		div{
+			font-size:0.13rem;
+			i{
+			font-size: 0.14rem;
+			vertical-align: top;
+			margin: 0 0.05rem;
+			color: #166FEE;
+			}
+		}
+		div:last-child{
+			color: #999;
+			
+		}
+	}
+	.line_right{
+		height: 0.41rem;
+		justify-content: space-around;
+		flex:0.5;
+		line-height: 0.41rem;
+		display: flex;
+		i{
+			font-size: 0.2rem;
+			color: #999;
+		}
+	}
+}
+}
